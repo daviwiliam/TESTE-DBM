@@ -26,7 +26,7 @@ namespace ApiCSharp.Controllers
             try
             {
                 using var stream = new StreamReader(file.OpenReadStream());
-                await stream.ReadLineAsync(); // Ignorar cabeçalho
+                await stream.ReadLineAsync();
 
                 var pessoas = new List<Pessoa>();
 
@@ -35,10 +35,10 @@ namespace ApiCSharp.Controllers
                 {
                     var data = line.Split(',');
                     if (data.Length < 5)
-                        continue; // Pula linhas inválidas
+                        continue;
 
                     if (!int.TryParse(data[2], out int idade))
-                        continue; // Validação da idade
+                        continue;
 
                     var pessoa = new Pessoa
                     {
