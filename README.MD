@@ -45,12 +45,12 @@ TESTE-DBM/
 - Atualize as configurações de conexão no `appsettings.json`.
 - Rode as migrações:
   ```sh
+cd api-csharp
   dotnet ef database update
   ```
 
 ### 2. Executar a API em C#
 ```sh
-cd api-csharp
  dotnet run
 ```
 A API ficará acessível em `http://localhost:{{port}}`.
