@@ -56,13 +56,13 @@ TESTE-DBM/
 A API ficará acessível em `http://localhost:{{port}}`.
 
 ## Endpoints da API
-- **Importar CSV:** `POST /api/import`
+- **Importar CSV:** `POST /api/import-csv`
 - **Buscar por ID:** `GET /api/dados/{id}`
 
 ## Exemplo de Uso
 ### Enviar um CSV para a API (via Postman ou curl)
 ```sh
-curl -X POST -F "file=@dados.csv" http://localhost:{{port}}/api/import
+curl -X POST -F "file=@dados.csv" http://localhost:{{port}}/api/import-csv
 ```
 
 ### Buscar um registro por ID
