@@ -1,6 +1,8 @@
 import requests
 
-API_URL = "http://localhost:5230/api/pessoa/"
+port = '5230'
+
+API_URL = f"http://localhost:{port}/api/pessoa/"
 
 def categorizar_idade(idade):
     if idade < 30:
