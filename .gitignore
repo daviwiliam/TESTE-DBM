@@ -1,0 +1,7 @@
+bin/
+obj/
+out/
+venv/
+__pycache__/
+*.pyc
+*.pyo
