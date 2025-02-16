@@ -1,4 +1,4 @@
-# Prova Prática de Desenvolvimento API e Cliente - DBM
+# Prova Prática API e Cliente - DBM
 
 ## Objetivo
 O projeto consiste em dois sistemas integrados:
